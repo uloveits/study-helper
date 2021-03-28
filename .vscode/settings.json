@@ -1,0 +1,31 @@
+{
+  "editor.tabSize": 2,
+  "editor.wordWrapColumn": 150,
+  "prettier.prettierPath": "./node_modules/prettier",
+  "files.autoSave": "onWindowChange",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "prettier.semi": true,
+  "prettier.singleQuote": true,
+  //分号和双引号确实不会再自动添加了，但是不会在方法括号之间插入空格，可以再加入这条配置即可
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "eslint.workingDirectories": [
+    "./client",
+    "./server"
+  ],
+  "liveServer.settings.proxy": {
+    "enable": true,
+    "baseUri": "/api",
+    "proxyUri": "http://127.0.0.1:8060/api"
+  },
+  "liveServer.settings.root": "/client/build",
+  "liveServer.settings.port": 5501,
+  "cSpell.words": [
+    "Sider",
+    "cascader",
+    "datepicker",
+    "echart",
+    "ronds",
+    "successed"
+  ]
+}
