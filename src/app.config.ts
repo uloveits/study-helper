@@ -1,12 +1,9 @@
 export default {
-  pages: [
-    'pages/index/index',
-    'pages/question/content/index',
-  ],
+  pages: ['pages/index/index', 'pages/schulte/index', 'pages/schulte/content/index', 'pages/question/content/index'],
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',
     navigationBarTitleText: 'WeChat',
-    navigationBarTextStyle: 'black'
-  }
-}
+    navigationBarTextStyle: 'black',
+  },
+};

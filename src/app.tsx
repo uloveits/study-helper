@@ -1,9 +1,10 @@
-import React, { Component } from "react";
-import { Provider } from "mobx-react";
-import "windi.css";
-import counterStore from "./store/counter";
+import React, { Component } from 'react';
+import { Provider } from 'mobx-react';
+import 'windi.css';
 
-import "./app.scss";
+import counterStore from './store/counter';
+
+import './app.scss';
 
 const store = {
   counterStore,

@@ -6,7 +6,7 @@ interface IZbSwiperProps {
   /**
    *  轮播图的条目
    */
-  item: any[];
+  data: any[];
   /**
    *  高度
    */
@@ -27,24 +27,13 @@ interface IZbSwiperProps {
  * @returns
  */
 const ZbSwiper = (props: IZbSwiperProps) => {
-  const { item, height, style, itemStyle } = props;
+  const { data, height, style, itemStyle } = props;
 
   return (
-    <Swiper
-      style={{ height: `${height}px`, ...style }}
-      circular
-      indicatorDots
-      indicatorColor='#999'
-      indicatorActiveColor='#000'
-    >
-      {item.map(it => (
+    <Swiper style={{ height: `${height}px`, ...style }} circular indicatorDots indicatorColor="#999" indicatorActiveColor="#000">
+      {data.map((it) => (
         <SwiperItem key={it.id}>
-          <Image
-            className='w-full'
-            style={{ height: `${height}px`, ...itemStyle }}
-            mode='aspectFill'
-            src={it.url || banner}
-          />
+          <Image className="w-full" style={{ height: `${height}px`, ...itemStyle }} mode="aspectFill" src={it.url || banner} />
         </SwiperItem>
       ))}
     </Swiper>

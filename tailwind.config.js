@@ -1,3 +1,6 @@
+
+const colors = require('tailwindcss/colors')
+
 module.exports = {
     prefixer: false,
     separator: '_',
@@ -58,33 +61,33 @@ module.exports = {
         },
         spacing: {
             '10px': '10px'
-        },
-        color: {
-            // brand colors
-            primary: "#cc0000",
-            white: "#fff",
-            black: "#292929",
-            background: "#f6f8f9",
-
-            transparent: 'transparent',
-            current: 'currentColor',
-            blue: {
-                light: '#85d7ff',
-                DEFAULT: '#1fb6ff',
-                dark: '#009eeb',
-            },
-            pink: {
-                light: '#ff7ce5',
-                DEFAULT: '#ff49db',
-                dark: '#ff16d1',
-            },
-            gray: {
-                darkest: '#1f2d3d',
-                dark: '#3c4858',
-                DEFAULT: '#c0ccda',
-                light: '#e0e6ed',
-                lightest: '#f9fafc',
-            }
         }
+
+        // colors: {
+        //     primary: '#ff49db',
+        //     white: "#fff",
+        //     black: "#292929",
+        //     background: "#f6f8f9",
+
+        //     transparent: 'transparent',
+        //     current: 'currentColor',
+        //     blue: {
+        //         light: '#85d7ff',
+        //         DEFAULT: '#1fb6ff',
+        //         dark: '#009eeb',
+        //     },
+        //     pink: {
+        //         light: '#ff7ce5',
+        //         DEFAULT: '#ff49db',
+        //         dark: '#ff16d1',
+        //     },
+        //     gray: {
+        //         darkest: '#1f2d3d',
+        //         dark: '#3c4858',
+        //         DEFAULT: '#c0ccda',
+        //         light: '#e0e6ed',
+        //         lightest: '#f9fafc',
+        //     }
+        // }
     },
 };
